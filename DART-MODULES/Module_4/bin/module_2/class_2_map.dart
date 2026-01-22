@@ -5,7 +5,7 @@ main() {
 
   /// key , Value
   Map<String, String> person = {
-    'name': 'Mehedi+nuha+chandra',
+    'name': 'Taufiq',
     'age': '27',
     'address': ' Dhaka',
     'Exp': ' 5 years',
@@ -35,11 +35,16 @@ main() {
   print(person.containsKey('Exp'));
   print(person.containsValue('Taufiq'));
 
-  Map<String, String> additionalinfo = {'sub': 'CSE', 'CGPA': '3.8'};
+  Map<String, String> additionalinfo = {
+    'sub': 'CSE',
+    'CGPA': '3.8',
+  };
 
   person.addAll(additionalinfo);
 
-  person.addAll({'email': 'a@b.com'});
+  person.addAll({
+    'email': 'a@b.com',
+  });
 
   person['Country'] = 'BD';
 
@@ -57,9 +62,13 @@ main() {
   person.clear();
   print(person);
 
-  Map person2 = {'name': 'x', 'age': 25, 'amount': 50.23, 567: false};
+  Map person2 = {
+    'name': 'x',
+    'age': 25,
+    'amount': 50.23,
+    567: false,
+  };
 
   print(person2);
   print(person2.runtimeType);
-  print(person);
 }
